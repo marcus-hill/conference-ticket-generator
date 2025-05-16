@@ -1,0 +1,34 @@
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  font-family: "Inconsolata";
+  margin-bottom: calc(24rem / 16);
+}
+
+.inputLabel {
+  font-family: "Inconsolata";
+  color: white;
+  font-size: calc(23rem / 16);
+  margin-bottom: calc(12rem / 16);
+}
+
+.inputHtml {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  font-size: calc(19rem / 16);
+  color: white;
+}
+
+.inputHtml::placeholder {
+  color: white;
+}
+
+.inputHtml:focus,
+.inputHtml:hover {
+  outline: none;
+}

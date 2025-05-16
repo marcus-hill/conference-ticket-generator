@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+
+.conference-generator-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url("./assets/background-mobile.png");
+}
+
+.conference-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: calc(33rem / 16);
+}
+
+.patternSquigglyLineTop {
+  position: absolute;
+  width: 10rem;
+  right: 0;
+  top: 0.9rem;
+}
+
+.patternSquigglyLineBottom {
+  position: absolute;
+  width: 25rem;
+  bottom: 0;
+  left: 0;
+}
