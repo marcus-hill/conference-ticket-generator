@@ -4,6 +4,8 @@ import StandardInputBox from "../StandardInputBox/StandardInputBox";
 
 const TicketInput = () => {
   const [fullName, setFullName] = useState();
+  const [emailAddress, setEmailAddress] = useState();
+  const [gitUsername, setGitUsername] = useState();
 
   return (
     <>
@@ -12,9 +14,9 @@ const TicketInput = () => {
         <p className={classes.ticketInputDescription}>Secure your spot at next year's biggest coding conference.</p>
       </div>
 
-      <StandardInputBox inputTitle="First Name" returnInput={setFullName} preview="Jonatan Kristof" valid={true} invalidMessage="Please enter your first name." />
-      <StandardInputBox inputTitle="Email Address" returnInput={setFullName} preview="jonatan@gmail.com" valid={true} invalidMessage="Please enter your email address." />
-      <StandardInputBox inputTitle="GitHub Username" returnInput={setFullName} preview="@jonatankristof0101" valid={true} invalidMessage="Please enter your GitHub Username." />
+      <StandardInputBox inputTitle="Fh,, Name" returnInput={setFullName} preview="Jonatan Kristof" valid={true} invalidMessage="Please enter your full name." />
+      <StandardInputBox inputTitle="Email Address" returnInput={setEmailAddress} preview="jonatan@gmail.com" valid={true} invalidMessage="Please enter your email address." />
+      <StandardInputBox inputTitle="GitHub Username" returnInput={setGitUsername} preview="@jonatankristof0101" valid={true} invalidMessage="Please enter your GitHub Username." />
     </>
   );
 };
