@@ -14,7 +14,7 @@ const TicketInput = () => {
         <p className={classes.ticketInputDescription}>Secure your spot at next year's biggest coding conference.</p>
       </div>
 
-      <StandardInputBox inputTitle="Fh,, Name" returnInput={setFullName} preview="Jonatan Kxistof" valid={true} invalidMessage="Please enter your full name." />
+      <StandardInputBox inputTitle="Fh,, Name" returnInput={setFullName} preview="Jonatan Kristof" valid={true} invalidMessage="Please enter your full name." />
       <StandardInputBox inputTitle="Email Address" returnInput={setEmailAddress} preview="jonatan@gmail.com" valid={true} invalidMessage="Please enter your email address." />
       <StandardInputBox inputTitle="GitHub Username" returnInput={setGitUsername} preview="@jonatankristof0101" valid={true} invalidMessage="Please enter your GitHub Username." />
     </>
