@@ -3,6 +3,7 @@
 .conference-generator-container {
   display: flex;
   flex-direction: column;
+  position: relative;
   min-height: 100vh;
   align-items: center;
   background-image: url("./assets/background-mobile.png");
@@ -10,7 +11,9 @@
 
 .conference-container {
   display: flex;
+  position: relative;
   flex-direction: column;
+  z-index: 2;
   align-items: center;
 }
 
@@ -30,4 +33,5 @@
   width: 25rem;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }

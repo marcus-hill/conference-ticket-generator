@@ -1,0 +1,66 @@
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  font-family: "Inconsolata";
+  margin-bottom: calc(24rem / 16);
+}
+
+.inputLabel {
+  font-family: "Inconsolata";
+  color: white;
+  font-size: calc(23rem / 16);
+  margin-bottom: calc(12rem / 16);
+}
+
+.helpText {
+  display: flex;
+  margin-top: calc(13rem / 16);
+  gap: calc(10rem / 16);
+  color: #d1d0d5;
+  font-size: calc(12rem / 16);
+}
+
+.helpIcon {
+  border: 1px solid #d1d0d5;
+  width: 3px;
+  padding: 1px 5px;
+  border-radius: 20px;
+}
+
+.originalInput {
+  display: none;
+}
+
+.mainInputLabel {
+  background-image: url("data:image/svg+xml,%3csvg width='90%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='grey' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='23' stroke-linecap='round'/%3e%3c/svg%3e");
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-family: "Inconsolata";
+  color: #d1d0d5;
+  font-size: calc(18rem / 16);
+  display: flex;
+  align-items: center;
+  padding: calc(19rem / 16) 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.uploadIcon {
+  background-color: #4b4869;
+  padding: calc(15rem / 16);
+  border: 1px solid #878787;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.invalidText {
+  display: flex;
+  margin-top: calc(13rem / 16);
+  gap: calc(10rem / 16);
+  color: #f57463;
+  font-size: calc(12rem / 16);
+}

@@ -15,12 +15,14 @@ function App() {
     <>
       <div className="conference-generator-container">
         <img src={patternSquigglyLineTop} className="patternSquigglyLineTop" />
+
         <div className="conference-container">
           <div className="logo">
             <img src={logoFull} />
           </div>
           {showingTicketInput && <TicketInput></TicketInput>}
         </div>
+
         <img src={patternSquigglyLineBottom} className="patternSquigglyLineBottom" />
       </div>
     </>
