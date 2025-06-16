@@ -24,6 +24,11 @@
   color: white;
 }
 
+.inputHtml:hover {
+  background-color: rgba(209, 209, 213, 0.3);
+  cursor: pointer;
+}
+
 .inputHtml::placeholder {
   color: white;
 }

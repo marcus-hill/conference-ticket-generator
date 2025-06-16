@@ -1,0 +1,12 @@
+.inputButton {
+  outline: none;
+  border: none;
+  background-color: rgba(209, 208, 213, 0.2);
+  border-radius: 8px;
+  padding: 2px 5px;
+  color: white;
+}
+
+.inputButton:hover {
+  text-decoration: underline;
+}

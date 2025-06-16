@@ -1,34 +1,31 @@
 import classes from "./fileuploadbox.module.css";
 // import { default as InfoIcon } from "../../assets/icon-info.svg";
 import { default as UploadIcon } from "../../assets/icon-upload.svg";
-import InfoIcon from "../../assets/icon-info.svg?react";
-import InfoIconError from "../../assets/icon-info-error.svg?react";
+import ImageAvatar from "../../assets/image-avatar.jpg?react";
 
-const FileUploadBox = ({ inputId, inputTitle, previewMessage, uploadIcon, helpText, valid, invalidMessage, uploaded, uploadedImagePath, returnInput }) => {
-  const handleReturnInput = (input) => {
-    returnInput(input.target.files[0]);
-  };
+import InputButton from "../InputButton/InputButton";
+import { useRef } from "react";
+import InvalidMessage from "../InvalidMessage/InvalidMessage";
 
+const FileUploadBox = ({ inputId, inputTitle, previewMessage, uploadIcon, helpText, handleFileChange, handleRemoveFile, valid, invalidMessage, uploaded, uploadedImagePath, handleFileSubmit, fileInput }) => {
   return (
     <>
       <div className={classes.inputBox}>
         <p className={classes.inputLabel}>{inputTitle}</p>
         <label htmlFor={inputId} id={inputId + "-label"} className={classes.mainInputLabel}>
-          <div className={classes.uploadIcon}>
-            <img src={UploadIcon} />
-          </div>
-          {previewMessage}
+          <div className={classes.uploadIcon}>{uploaded ? <img src={ImageAvatar} className={classes.uploadedIcon} /> : <img src={UploadIcon} />}</div>
+          {uploaded ? (
+            <div className={classes.uploadedButtons}>
+              <InputButton id="remove-image" buttonText="Remove image" onClickHandler={handleRemoveFile} />
+              <InputButton id="change-image" buttonText="Change image" onClickHandler={handleFileChange} />
+            </div>
+          ) : (
+            <p>{previewMessage}</p>
+          )}
+          <input className={classes.originalInput} id={inputId} type="file" ref={fileInput} accept="image/png, image/jpeg" onChange={handleFileSubmit}></input>
         </label>
-        <input className={classes.originalInput} id={inputId} type="file" accept="image/png, image/jpeg" onChange={(e) => handleReturnInput(e)}></input>
-        {valid ? (
-          <div className={classes.helpText}>
-            <InfoIcon /> {helpText}
-          </div>
-        ) : (
-          <div className={classes.invalidText}>
-            <InfoIconError /> {invalidMessage}
-          </div>
-        )}
+
+        <InvalidMessage validMessage={helpText} invalidMessage={invalidMessage} valid={valid} />
       </div>
     </>
   );

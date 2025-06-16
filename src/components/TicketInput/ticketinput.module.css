@@ -20,3 +20,179 @@
   font-family: "Inconsolata";
   font-size: calc(20rem / 16);
 }
+
+.generateTicketButton {
+  width: 90%;
+  background-color: #f57463;
+  color: #0d082d;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0.8rem 0;
+  font-size: calc(20rem / 16);
+  font-weight: 900;
+  font-family: "Inconsolata";
+  margin-bottom: 2rem;
+}
+
+.ticketOutlineDiv {
+  max-width: calc(343rem / 16);
+  position: relative;
+}
+
+.ticketOutline {
+  position: relative;
+  max-width: calc(343rem / 16);
+  font-family: "Inconsolata", sans-serif;
+}
+
+.ticketLogoContainer {
+  position: absolute;
+  top: calc(75rem / 16);
+  left: calc(17rem / 16);
+}
+
+.ticketLogo {
+  max-width: calc(25rem / 16);
+}
+.ticketTitleContainer {
+  position: absolute;
+  top: calc(71rem / 16);
+  left: calc(55rem / 16);
+}
+
+.ticketTitle {
+  color: white;
+  font-size: calc(26rem / 16);
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 600;
+}
+
+.ticketDescription {
+  color: #d1d0d5;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 300;
+}
+
+.ticketEmail {
+  color: #f57463;
+}
+
+.ticketFullName {
+  font-weight: 900;
+  background: linear-gradient(to right, #f57463 0%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ticketAvatarContainer {
+  position: absolute;
+  bottom: calc(80rem / 16);
+  left: calc(15rem / 16);
+}
+
+.ticketAvatar {
+  max-width: calc(46rem / 16);
+  border-radius: 7px;
+}
+
+.ticketHolderContainer {
+  position: absolute;
+  bottom: calc(80rem / 16);
+  left: calc(75rem / 16);
+}
+
+.ticketHolderName {
+  color: white;
+  font-family: "Inconsolata", sans-serif;
+  font-size: calc(23rem / 16);
+  font-weight: 2300;
+}
+
+.gitHubContainer {
+  display: flex;
+  align-items: center;
+  gap: calc(5rem / 16);
+}
+
+.gitHubLogo {
+  max-width: calc(20rem / 16);
+}
+
+.gitHubUsername {
+  font-family: "Inconsolata", sans-serif;
+  color: #d1d0d5;
+  font-weight: 250;
+}
+
+.ticketNumberContainer {
+  position: absolute;
+  right: calc(-3rem / 16);
+  top: calc(123rem / 16);
+}
+
+.ticketNumber {
+  font-family: "Inconsolata", sans-serif;
+  color: #8784a5;
+  font-weight: 400;
+  font-size: calc(22rem / 16);
+  transform: rotate(90deg);
+}
+
+@media (min-width: 600px) {
+  .ticketOutlineDiv {
+    min-width: calc(600rem / 16);
+  }
+  .ticketOutline {
+    min-width: calc(600rem / 16);
+  }
+
+  .ticketLogoContainer {
+    top: calc(25rem / 16);
+  }
+  .ticketLogo {
+    max-width: calc(60rem / 16);
+  }
+
+  .ticketTitleContainer {
+    top: calc(5rem / 16);
+    left: calc(75rem / 16);
+  }
+  .ticketTitle {
+    font-size: calc(40rem / 16);
+  }
+
+  .ticketAvatarContainer {
+    bottom: calc(25rem / 16);
+  }
+  .ticketAvatar {
+    max-width: calc(65rem / 16);
+  }
+
+  .ticketHolderContainer {
+    bottom: calc(27rem / 16);
+    left: calc(97rem / 16);
+  }
+
+  .ticketHolderName {
+    font-size: calc(30rem / 16);
+  }
+
+  .ticketNumber {
+    font-size: calc(30rem / 16);
+  }
+
+  .ticketNumberContainer {
+    top: calc(115rem / 16);
+  }
+
+  .ticketInputHeader {
+    font-size: calc(70rem / 16);
+    max-width: calc(800rem / 16);
+  }
+
+  .ticketInputDescription {
+    font-size: calc(24rem / 16);
+    max-width: calc(550rem / 16);
+  }
+}

@@ -1,0 +1,24 @@
+.invalidText {
+  display: flex;
+  margin-top: calc(13rem / 16);
+  gap: calc(10rem / 16);
+  color: #f57463;
+  font-size: calc(12rem / 16);
+  font-family: "Inconsolata";
+}
+
+.helpText {
+  display: flex;
+  margin-top: calc(13rem / 16);
+  gap: calc(10rem / 16);
+  color: #d1d0d5;
+  font-size: calc(12rem / 16);
+  font-family: "Inconsolata";
+}
+
+.helpIcon {
+  border: 1px solid #d1d0d5;
+  width: 3px;
+  padding: 1px 5px;
+  border-radius: 20px;
+}

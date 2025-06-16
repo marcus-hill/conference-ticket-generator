@@ -14,21 +14,6 @@
   margin-bottom: calc(12rem / 16);
 }
 
-.helpText {
-  display: flex;
-  margin-top: calc(13rem / 16);
-  gap: calc(10rem / 16);
-  color: #d1d0d5;
-  font-size: calc(12rem / 16);
-}
-
-.helpIcon {
-  border: 1px solid #d1d0d5;
-  width: 3px;
-  padding: 1px 5px;
-  border-radius: 20px;
-}
-
 .originalInput {
   display: none;
 }
@@ -47,20 +32,27 @@
   align-items: center;
   padding: calc(19rem / 16) 0;
   background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
+.mainInputLabel:hover {
+  background-color: rgba(209, 209, 213, 0.3);
+  cursor: pointer;
+}
 .uploadIcon {
   background-color: #4b4869;
-  padding: calc(15rem / 16);
+  padding: calc(5rem / 16);
   border: 1px solid #878787;
   border-radius: 15px;
   margin-bottom: 1rem;
 }
 
-.invalidText {
+.uploadedIcon {
+  max-width: calc(70rem / 16);
+  border-radius: 8px;
+}
+
+.uploadedButtons {
   display: flex;
-  margin-top: calc(13rem / 16);
-  gap: calc(10rem / 16);
-  color: #f57463;
-  font-size: calc(12rem / 16);
+  gap: 1rem;
 }
