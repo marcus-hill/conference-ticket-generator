@@ -19,6 +19,7 @@ function App() {
         <div className="conference-container">
           <div className="logo">
             <img src={logoFull} />
+            <br></br>
           </div>
           {showingTicketInput && <TicketInput></TicketInput>}
         </div>
